@@ -1,2 +1,3 @@
-@extends('backend.layouts.app')
-@section('title','Dashboard')
+<x-app-layout title="Dashboard">
+    {{-- // --}}
+</x-app-layout>

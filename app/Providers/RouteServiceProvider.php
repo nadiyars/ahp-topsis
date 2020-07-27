@@ -43,11 +43,21 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
-        $this->mapApiRoutes();
+        $this->mapApiRoutes()->mapWebRoutes()->mapAuth();
+    }
 
-        $this->mapWebRoutes();
+    /**
+     * Define "web" routes for auth application
+     * 
+     * @return self
+     */
+    protected function mapAuth(): self
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/auth.php'));
 
-        //
+        return $this;
     }
 
     /**
@@ -55,13 +65,15 @@ class RouteServiceProvider extends ServiceProvider
      *
      * These routes all receive session state, CSRF protection, etc.
      *
-     * @return void
+     * @return self
      */
-    protected function mapWebRoutes()
+    protected function mapWebRoutes(): self
     {
         Route::middleware('web')
             ->namespace($this->namespace)
             ->group(base_path('routes/web.php'));
+
+        return $this;
     }
 
     /**
@@ -69,13 +81,15 @@ class RouteServiceProvider extends ServiceProvider
      *
      * These routes are typically stateless.
      *
-     * @return void
+     * @return self
      */
-    protected function mapApiRoutes()
+    protected function mapApiRoutes(): self
     {
         Route::prefix('api')
             ->middleware('api')
             ->namespace($this->namespace)
             ->group(base_path('routes/api.php'));
+
+        return $this;
     }
 }
