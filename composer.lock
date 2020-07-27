@@ -4,75 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b4b30267b1b8b972ad464a0782758ff",
+    "content-hash": "974621de08315c9ff3b447fcc7bd1e06",
     "packages": [
-        {
-            "name": "artesaos/seotools",
-            "version": "v0.18.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/artesaos/seotools.git",
-                "reference": "91c9fc3ee18db01d220dd47708f303b8eff8078b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/artesaos/seotools/zipball/91c9fc3ee18db01d220dd47708f303b8eff8078b",
-                "reference": "91c9fc3ee18db01d220dd47708f303b8eff8078b",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/config": "5.8.* || ^6.0 || ^7.0",
-                "illuminate/support": "5.8.* || ^6.0 || ^7.0",
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "orchestra/testbench": "~3.8.4 || ^4.0 || ^5.0",
-                "phpspec/phpspec": "~5.1.1 || ^6.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Artesaos\\SEOTools\\Providers\\SEOToolsServiceProvider"
-                    ],
-                    "aliases": {
-                        "SEOMeta": "Artesaos\\SEOTools\\Facades\\SEOMeta",
-                        "OpenGraph": "Artesaos\\SEOTools\\Facades\\OpenGraph",
-                        "Twitter": "Artesaos\\SEOTools\\Facades\\TwitterCard",
-                        "JsonLd": "Artesaos\\SEOTools\\Facades\\JsonLd",
-                        "SEO": "Artesaos\\SEOTools\\Facades\\SEOTools"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Artesaos\\SEOTools\\": "src/SEOTools/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Vinicius",
-                    "email": "luiz.vinicius73@gmail.com"
-                }
-            ],
-            "description": "SEO Tools for Laravel and Lumen",
-            "keywords": [
-                "JSON-LD",
-                "laravel",
-                "lumen",
-                "metatags",
-                "opengraph",
-                "seo",
-                "seotools",
-                "webmaster"
-            ],
-            "time": "2020-06-19T22:31:46+00:00"
-        },
         {
             "name": "asm89/stack-cors",
             "version": "1.3.0",
@@ -170,199 +103,6 @@
                 "math"
             ],
             "time": "2020-04-15T15:59:35+00:00"
-        },
-        {
-            "name": "cocur/slugify",
-            "version": "v4.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cocur/slugify.git",
-                "reference": "3f1ffc300f164f23abe8b64ffb3f92d35cec8307"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cocur/slugify/zipball/3f1ffc300f164f23abe8b64ffb3f92d35cec8307",
-                "reference": "3f1ffc300f164f23abe8b64ffb3f92d35cec8307",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": ">=7.0"
-            },
-            "conflict": {
-                "symfony/config": "<3.4 || >=4,<4.3",
-                "symfony/dependency-injection": "<3.4 || >=4,<4.3",
-                "symfony/http-kernel": "<3.4 || >=4,<4.3",
-                "twig/twig": "<2.12.1"
-            },
-            "require-dev": {
-                "laravel/framework": "~5.1",
-                "latte/latte": "~2.2",
-                "league/container": "^2.2.0",
-                "mikey179/vfsstream": "~1.6.8",
-                "mockery/mockery": "^1.3",
-                "nette/di": "~2.4",
-                "phpunit/phpunit": "^5.7.27",
-                "pimple/pimple": "~1.1",
-                "plumphp/plum": "~0.1",
-                "symfony/config": "^3.4 || ^4.3 || ^5.0",
-                "symfony/dependency-injection": "^3.4 || ^4.3 || ^5.0",
-                "symfony/http-kernel": "^3.4 || ^4.3 || ^5.0",
-                "twig/twig": "^2.12.1 || ~3.0",
-                "zendframework/zend-modulemanager": "~2.2",
-                "zendframework/zend-servicemanager": "~2.2",
-                "zendframework/zend-view": "~2.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Cocur\\Slugify\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Florian Eckerstorfer",
-                    "email": "florian@eckerstorfer.co",
-                    "homepage": "https://florian.ec"
-                },
-                {
-                    "name": "Ivo Bathke",
-                    "email": "ivo.bathke@gmail.com"
-                }
-            ],
-            "description": "Converts a string into a slug.",
-            "keywords": [
-                "slug",
-                "slugify"
-            ],
-            "time": "2019-12-14T13:04:14+00:00"
-        },
-        {
-            "name": "cviebrock/eloquent-sluggable",
-            "version": "7.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cviebrock/eloquent-sluggable.git",
-                "reference": "4e5a961965f92ef0e3c10ec4ebc073a6ab6bc4f0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/4e5a961965f92ef0e3c10ec4ebc073a6ab6bc4f0",
-                "reference": "4e5a961965f92ef0e3c10ec4ebc073a6ab6bc4f0",
-                "shasum": ""
-            },
-            "require": {
-                "cocur/slugify": "^4.0",
-                "illuminate/config": "^7.0",
-                "illuminate/database": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": "^7.2.5"
-            },
-            "require-dev": {
-                "limedeck/phpunit-detailed-printer": "^5.0",
-                "mockery/mockery": "^1.2.3",
-                "orchestra/database": "^5.0",
-                "orchestra/testbench": "^5.0",
-                "phpunit/phpunit": "^8.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Cviebrock\\EloquentSluggable\\ServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Cviebrock\\EloquentSluggable\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Colin Viebrock",
-                    "email": "colin@viebrock.ca"
-                }
-            ],
-            "description": "Easy creation of slugs for your Eloquent models in Laravel",
-            "homepage": "https://github.com/cviebrock/eloquent-sluggable",
-            "keywords": [
-                "eloquent",
-                "eloquent-sluggable",
-                "laravel",
-                "lumen",
-                "slug",
-                "sluggable"
-            ],
-            "time": "2020-04-07T03:18:54+00:00"
-        },
-        {
-            "name": "davejamesmiller/laravel-breadcrumbs",
-            "version": "5.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/davejamesmiller/laravel-breadcrumbs.git",
-                "reference": "99f92a706faefb5e1816caa96e877a0184509e5b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/davejamesmiller/laravel-breadcrumbs/zipball/99f92a706faefb5e1816caa96e877a0184509e5b",
-                "reference": "99f92a706faefb5e1816caa96e877a0184509e5b",
-                "shasum": ""
-            },
-            "require": {
-                "facade/ignition-contracts": "^1.0",
-                "illuminate/support": ">=5.6",
-                "illuminate/view": ">=5.6",
-                "php": ">=7.1.3"
-            },
-            "require-dev": {
-                "orchestra/testbench": ">=3.6",
-                "php-coveralls/php-coveralls": "^2.0",
-                "phpunit/phpunit": "^7.0|^8.0",
-                "spatie/phpunit-snapshot-assertions": "^2.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "DaveJamesMiller\\Breadcrumbs\\BreadcrumbsServiceProvider"
-                    ],
-                    "aliases": {
-                        "Breadcrumbs": "DaveJamesMiller\\Breadcrumbs\\Facades\\Breadcrumbs"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "DaveJamesMiller\\Breadcrumbs\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dave James Miller",
-                    "email": "dave@davejamesmiller.com"
-                }
-            ],
-            "description": "A simple Laravel-style way to create breadcrumbs.",
-            "homepage": "https://github.com/davejamesmiller/laravel-breadcrumbs",
-            "keywords": [
-                "laravel"
-            ],
-            "abandoned": true,
-            "time": "2019-12-30T22:50:51+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -647,55 +387,6 @@
                 "validator"
             ],
             "time": "2020-06-16T20:11:17+00:00"
-        },
-        {
-            "name": "facade/ignition-contracts",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/facade/ignition-contracts.git",
-                "reference": "aeab1ce8b68b188a43e81758e750151ad7da796b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition-contracts/zipball/aeab1ce8b68b188a43e81758e750151ad7da796b",
-                "reference": "aeab1ce8b68b188a43e81758e750151ad7da796b",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.14",
-                "phpunit/phpunit": "^7.5|^8.0",
-                "vimeo/psalm": "^3.12"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Facade\\IgnitionContracts\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "homepage": "https://flareapp.io",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Solution contracts for Ignition",
-            "homepage": "https://github.com/facade/ignition-contracts",
-            "keywords": [
-                "contracts",
-                "flare",
-                "ignition"
-            ],
-            "time": "2020-07-14T10:10:28+00:00"
         },
         {
             "name": "fideloper/proxy",
@@ -1285,6 +976,74 @@
             "time": "2020-06-30T20:56:33+00:00"
         },
         {
+            "name": "laravelcollective/html",
+            "version": "v6.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LaravelCollective/html.git",
+                "reference": "5ef9a3c9ae2423fe5618996f3cde375d461a3fc6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/5ef9a3c9ae2423fe5618996f3cde375d461a3fc6",
+                "reference": "5ef9a3c9ae2423fe5618996f3cde375d461a3fc6",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "^6.0|^7.0",
+                "illuminate/routing": "^6.0|^7.0",
+                "illuminate/session": "^6.0|^7.0",
+                "illuminate/support": "^6.0|^7.0",
+                "illuminate/view": "^6.0|^7.0",
+                "php": ">=7.2.5"
+            },
+            "require-dev": {
+                "illuminate/database": "^6.0|^7.0",
+                "mockery/mockery": "~1.0",
+                "phpunit/phpunit": "~7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Collective\\Html\\HtmlServiceProvider"
+                    ],
+                    "aliases": {
+                        "Form": "Collective\\Html\\FormFacade",
+                        "Html": "Collective\\Html\\HtmlFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Collective\\Html\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Engebretson",
+                    "email": "adam@laravelcollective.com"
+                },
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "HTML and Form Builders for the Laravel Framework",
+            "homepage": "https://laravelcollective.com",
+            "time": "2020-05-19T18:02:16+00:00"
+        },
+        {
             "name": "league/commonmark",
             "version": "1.5.3",
             "source": {
@@ -1438,6 +1197,296 @@
             "time": "2020-07-26T07:20:36+00:00"
         },
         {
+            "name": "maatwebsite/excel",
+            "version": "3.1.20",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Maatwebsite/Laravel-Excel.git",
+                "reference": "39545fa96b84d5a90f702239659c49a5d7b1edea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/39545fa96b84d5a90f702239659c49a5d7b1edea",
+                "reference": "39545fa96b84d5a90f702239659c49a5d7b1edea",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/support": "5.5.*|5.6.*|5.7.*|5.8.*|^6.0|^7.0",
+                "php": "^7.0",
+                "phpoffice/phpspreadsheet": "^1.14"
+            },
+            "require-dev": {
+                "orchestra/database": "^5.0",
+                "orchestra/testbench": "^5.0",
+                "predis/predis": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Maatwebsite\\Excel\\ExcelServiceProvider"
+                    ],
+                    "aliases": {
+                        "Excel": "Maatwebsite\\Excel\\Facades\\Excel"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Maatwebsite\\Excel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Patrick Brouwers",
+                    "email": "patrick@maatwebsite.nl"
+                }
+            ],
+            "description": "Supercharged Excel exports and imports in Laravel",
+            "keywords": [
+                "PHPExcel",
+                "batch",
+                "csv",
+                "excel",
+                "export",
+                "import",
+                "laravel",
+                "php",
+                "phpspreadsheet"
+            ],
+            "time": "2020-07-17T20:39:28+00:00"
+        },
+        {
+            "name": "maennchen/zipstream-php",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maennchen/ZipStream-PHP.git",
+                "reference": "c4c5803cc1f93df3d2448478ef79394a5981cc58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/c4c5803cc1f93df3d2448478ef79394a5981cc58",
+                "reference": "c4c5803cc1f93df3d2448478ef79394a5981cc58",
+                "shasum": ""
+            },
+            "require": {
+                "myclabs/php-enum": "^1.5",
+                "php": ">= 7.1",
+                "psr/http-message": "^1.0",
+                "symfony/polyfill-mbstring": "^1.0"
+            },
+            "require-dev": {
+                "ext-zip": "*",
+                "guzzlehttp/guzzle": ">= 6.3",
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": ">= 7.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ZipStream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Duncan",
+                    "email": "pabs@pablotron.org"
+                },
+                {
+                    "name": "Jonatan Männchen",
+                    "email": "jonatan@maennchen.ch"
+                },
+                {
+                    "name": "Jesse Donat",
+                    "email": "donatj@gmail.com"
+                },
+                {
+                    "name": "András Kolesár",
+                    "email": "kolesar@kolesar.hu"
+                }
+            ],
+            "description": "ZipStream is a library for dynamically streaming dynamic zip files from PHP without writing to the disk at all on the server.",
+            "keywords": [
+                "stream",
+                "zip"
+            ],
+            "time": "2020-05-30T13:11:16+00:00"
+        },
+        {
+            "name": "markbaker/complex",
+            "version": "1.4.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MarkBaker/PHPComplex.git",
+                "reference": "8eaa40cceec7bf0518187530b2e63871be661b72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MarkBaker/PHPComplex/zipball/8eaa40cceec7bf0518187530b2e63871be661b72",
+                "reference": "8eaa40cceec7bf0518187530b2e63871be661b72",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6.0|^7.0.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+                "phpcompatibility/php-compatibility": "^9.0",
+                "phpdocumentor/phpdocumentor": "2.*",
+                "phploc/phploc": "2.*",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "^4.8.35|^5.4.0",
+                "sebastian/phpcpd": "2.*",
+                "squizlabs/php_codesniffer": "^3.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Complex\\": "classes/src/"
+                },
+                "files": [
+                    "classes/src/functions/abs.php",
+                    "classes/src/functions/acos.php",
+                    "classes/src/functions/acosh.php",
+                    "classes/src/functions/acot.php",
+                    "classes/src/functions/acoth.php",
+                    "classes/src/functions/acsc.php",
+                    "classes/src/functions/acsch.php",
+                    "classes/src/functions/argument.php",
+                    "classes/src/functions/asec.php",
+                    "classes/src/functions/asech.php",
+                    "classes/src/functions/asin.php",
+                    "classes/src/functions/asinh.php",
+                    "classes/src/functions/atan.php",
+                    "classes/src/functions/atanh.php",
+                    "classes/src/functions/conjugate.php",
+                    "classes/src/functions/cos.php",
+                    "classes/src/functions/cosh.php",
+                    "classes/src/functions/cot.php",
+                    "classes/src/functions/coth.php",
+                    "classes/src/functions/csc.php",
+                    "classes/src/functions/csch.php",
+                    "classes/src/functions/exp.php",
+                    "classes/src/functions/inverse.php",
+                    "classes/src/functions/ln.php",
+                    "classes/src/functions/log2.php",
+                    "classes/src/functions/log10.php",
+                    "classes/src/functions/negative.php",
+                    "classes/src/functions/pow.php",
+                    "classes/src/functions/rho.php",
+                    "classes/src/functions/sec.php",
+                    "classes/src/functions/sech.php",
+                    "classes/src/functions/sin.php",
+                    "classes/src/functions/sinh.php",
+                    "classes/src/functions/sqrt.php",
+                    "classes/src/functions/tan.php",
+                    "classes/src/functions/tanh.php",
+                    "classes/src/functions/theta.php",
+                    "classes/src/operations/add.php",
+                    "classes/src/operations/subtract.php",
+                    "classes/src/operations/multiply.php",
+                    "classes/src/operations/divideby.php",
+                    "classes/src/operations/divideinto.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Baker",
+                    "email": "mark@lange.demon.co.uk"
+                }
+            ],
+            "description": "PHP Class for working with complex numbers",
+            "homepage": "https://github.com/MarkBaker/PHPComplex",
+            "keywords": [
+                "complex",
+                "mathematics"
+            ],
+            "time": "2020-03-11T20:15:49+00:00"
+        },
+        {
+            "name": "markbaker/matrix",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MarkBaker/PHPMatrix.git",
+                "reference": "5348c5a67e3b75cd209d70103f916a93b1f1ed21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MarkBaker/PHPMatrix/zipball/5348c5a67e3b75cd209d70103f916a93b1f1ed21",
+                "reference": "5348c5a67e3b75cd209d70103f916a93b1f1ed21",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6.0|^7.0.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+                "phpcompatibility/php-compatibility": "dev-master",
+                "phploc/phploc": "^4",
+                "phpmd/phpmd": "dev-master",
+                "phpunit/phpunit": "^5.7",
+                "sebastian/phpcpd": "^3.0",
+                "squizlabs/php_codesniffer": "^3.0@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Matrix\\": "classes/src/"
+                },
+                "files": [
+                    "classes/src/functions/adjoint.php",
+                    "classes/src/functions/antidiagonal.php",
+                    "classes/src/functions/cofactors.php",
+                    "classes/src/functions/determinant.php",
+                    "classes/src/functions/diagonal.php",
+                    "classes/src/functions/identity.php",
+                    "classes/src/functions/inverse.php",
+                    "classes/src/functions/minors.php",
+                    "classes/src/functions/trace.php",
+                    "classes/src/functions/transpose.php",
+                    "classes/src/operations/add.php",
+                    "classes/src/operations/directsum.php",
+                    "classes/src/operations/subtract.php",
+                    "classes/src/operations/multiply.php",
+                    "classes/src/operations/divideby.php",
+                    "classes/src/operations/divideinto.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Baker",
+                    "email": "mark@lange.demon.co.uk"
+                }
+            ],
+            "description": "PHP Class for working with matrices",
+            "homepage": "https://github.com/MarkBaker/PHPMatrix",
+            "keywords": [
+                "mathematics",
+                "matrix",
+                "vector"
+            ],
+            "time": "2019-10-06T11:29:25+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "2.1.1",
             "source": {
@@ -1519,6 +1568,52 @@
             "time": "2020-07-23T08:41:23+00:00"
         },
         {
+            "name": "myclabs/php-enum",
+            "version": "1.7.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/myclabs/php-enum.git",
+                "reference": "5f36467c7a87e20fbdc51e524fd8f9d1de80187c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/5f36467c7a87e20fbdc51e524fd8f9d1de80187c",
+                "reference": "5f36467c7a87e20fbdc51e524fd8f9d1de80187c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7",
+                "squizlabs/php_codesniffer": "1.*",
+                "vimeo/psalm": "^3.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MyCLabs\\Enum\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP Enum contributors",
+                    "homepage": "https://github.com/myclabs/php-enum/graphs/contributors"
+                }
+            ],
+            "description": "PHP Enum implementation",
+            "homepage": "http://github.com/myclabs/php-enum",
+            "keywords": [
+                "enum"
+            ],
+            "time": "2020-02-14T08:15:52+00:00"
+        },
+        {
             "name": "nesbot/carbon",
             "version": "2.36.1",
             "source": {
@@ -1596,58 +1691,6 @@
                 "time"
             ],
             "time": "2020-07-04T12:29:56+00:00"
-        },
-        {
-            "name": "netojose/laravel-bootstrap-4-forms",
-            "version": "3.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/netojose/laravel-bootstrap-4-forms.git",
-                "reference": "47eef3e73c534df1f9d2ce10cc2521b71c09b383"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/netojose/laravel-bootstrap-4-forms/zipball/47eef3e73c534df1f9d2ce10cc2521b71c09b383",
-                "reference": "47eef3e73c534df1f9d2ce10cc2521b71c09b383",
-                "shasum": ""
-            },
-            "type": "package",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "NetoJose\\Bootstrap4Forms\\Bootstrap4FormsServiceProvider"
-                    ],
-                    "aliases": {
-                        "Form": "NetoJose\\Bootstrap4Forms\\Bootstrap4FormsFacade"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "NetoJose\\Bootstrap4Forms\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "José Sousa",
-                    "email": "sputinykster@gmail.com"
-                }
-            ],
-            "description": "Bootstrap 4 form builder for Laravel 5",
-            "keywords": [
-                "Forms",
-                "bootstrap",
-                "composer",
-                "form-builder",
-                "laravel",
-                "package",
-                "php"
-            ],
-            "time": "2019-07-24T07:59:17+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -1808,6 +1851,102 @@
             "time": "2018-07-02T15:55:56+00:00"
         },
         {
+            "name": "phpoffice/phpspreadsheet",
+            "version": "1.14.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
+                "reference": "2383aad5689778470491581442aab38cec41bf1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/2383aad5689778470491581442aab38cec41bf1d",
+                "reference": "2383aad5689778470491581442aab38cec41bf1d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-dom": "*",
+                "ext-fileinfo": "*",
+                "ext-gd": "*",
+                "ext-iconv": "*",
+                "ext-libxml": "*",
+                "ext-mbstring": "*",
+                "ext-simplexml": "*",
+                "ext-xml": "*",
+                "ext-xmlreader": "*",
+                "ext-xmlwriter": "*",
+                "ext-zip": "*",
+                "ext-zlib": "*",
+                "maennchen/zipstream-php": "^2.1",
+                "markbaker/complex": "^1.4",
+                "markbaker/matrix": "^1.2",
+                "php": "^7.2",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/simple-cache": "^1.0"
+            },
+            "require-dev": {
+                "dompdf/dompdf": "^0.8.5",
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "jpgraph/jpgraph": "^4.0",
+                "mpdf/mpdf": "^8.0",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpunit/phpunit": "^8.5",
+                "squizlabs/php_codesniffer": "^3.5",
+                "tecnickcom/tcpdf": "^6.3"
+            },
+            "suggest": {
+                "dompdf/dompdf": "Option for rendering PDF with PDF Writer",
+                "jpgraph/jpgraph": "Option for rendering charts, or including charts with PDF or HTML Writers",
+                "mpdf/mpdf": "Option for rendering PDF with PDF Writer",
+                "tecnickcom/tcpdf": "Option for rendering PDF with PDF Writer"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpOffice\\PhpSpreadsheet\\": "src/PhpSpreadsheet"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maarten Balliauw",
+                    "homepage": "https://blog.maartenballiauw.be"
+                },
+                {
+                    "name": "Mark Baker",
+                    "homepage": "https://markbakeruk.net"
+                },
+                {
+                    "name": "Franck Lefevre",
+                    "homepage": "https://rootslabs.net"
+                },
+                {
+                    "name": "Erik Tilt"
+                },
+                {
+                    "name": "Adrien Crivelli"
+                }
+            ],
+            "description": "PHPSpreadsheet - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
+            "homepage": "https://github.com/PHPOffice/PhpSpreadsheet",
+            "keywords": [
+                "OpenXML",
+                "excel",
+                "gnumeric",
+                "ods",
+                "php",
+                "spreadsheet",
+                "xls",
+                "xlsx"
+            ],
+            "time": "2020-07-19T09:51:35+00:00"
+        },
+        {
             "name": "phpoption/phpoption",
             "version": "1.7.5",
             "source": {
@@ -1956,6 +2095,107 @@
                 "psr-14"
             ],
             "time": "2019-01-08T18:20:26+00:00"
+        },
+        {
+            "name": "psr/http-client",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-client.git",
+                "reference": "2dfb5f6c5eff0e91e20e913f8c5452ed95b86621"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-client/zipball/2dfb5f6c5eff0e91e20e913f8c5452ed95b86621",
+                "reference": "2dfb5f6c5eff0e91e20e913f8c5452ed95b86621",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP clients",
+            "homepage": "https://github.com/php-fig/http-client",
+            "keywords": [
+                "http",
+                "http-client",
+                "psr",
+                "psr-18"
+            ],
+            "time": "2020-06-29T06:28:15+00:00"
+        },
+        {
+            "name": "psr/http-factory",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-factory.git",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for PSR-7 HTTP message factories",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2019-04-30T12:38:16+00:00"
         },
         {
             "name": "psr/http-message",
@@ -4341,48 +4581,49 @@
             "time": "2020-07-22T23:32:04+00:00"
         },
         {
-            "name": "watson/active",
-            "version": "5.0.0",
+            "name": "yajra/laravel-datatables-buttons",
+            "version": "v4.9.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/dwightwatson/active.git",
-                "reference": "3136d3ba5c364c4469a164a356b689109a60a1bf"
+                "url": "https://github.com/yajra/laravel-datatables-buttons.git",
+                "reference": "0ba6c5e095ed1e51d09643639290cbaaa35730b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dwightwatson/active/zipball/3136d3ba5c364c4469a164a356b689109a60a1bf",
-                "reference": "3136d3ba5c364c4469a164a356b689109a60a1bf",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables-buttons/zipball/0ba6c5e095ed1e51d09643639290cbaaa35730b8",
+                "reference": "0ba6c5e095ed1e51d09643639290cbaaa35730b8",
                 "shasum": ""
             },
             "require": {
-                "illuminate/config": "^7.0",
-                "illuminate/http": "^7.0",
-                "illuminate/routing": "^7.0",
-                "illuminate/support": "^7.0",
-                "php": ">=7.2"
+                "illuminate/console": "^5.5|^6|^7",
+                "maatwebsite/excel": "^3.0",
+                "php": ">=7.0",
+                "yajra/laravel-datatables-html": "3.*|4.*",
+                "yajra/laravel-datatables-oracle": "8.*|9.*"
             },
             "require-dev": {
                 "mockery/mockery": "~1.0",
-                "phpunit/phpunit": "~8.0"
+                "phpunit/phpunit": "~7.0"
+            },
+            "suggest": {
+                "barryvdh/laravel-snappy": "Allows exporting of dataTable to PDF using the print view.",
+                "dompdf/dompdf": "Allows exporting of dataTable to PDF using the DomPDF."
             },
             "type": "library",
             "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                },
                 "laravel": {
                     "providers": [
-                        "Watson\\Active\\ActiveServiceProvider"
-                    ],
-                    "aliases": {
-                        "Active": "Watson\\Watson\\Facades\\Active"
-                    }
+                        "Yajra\\DataTables\\ButtonsServiceProvider"
+                    ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Watson\\Active\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
+                    "Yajra\\DataTables\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -4390,17 +4631,78 @@
             ],
             "authors": [
                 {
-                    "name": "Dwight Watson",
-                    "email": "dwight@studiousapp.com"
+                    "name": "Arjay Angeles",
+                    "email": "aqangeles@gmail.com"
                 }
             ],
-            "description": "Laravel helper for recognising the current route, controller and action",
+            "description": "Laravel DataTables Buttons Plugin.",
             "keywords": [
-                "active",
-                "laravel",
-                "routing"
+                "buttons",
+                "datatables",
+                "jquery",
+                "laravel"
             ],
-            "time": "2020-03-03T20:25:22+00:00"
+            "time": "2020-07-07T01:57:55+00:00"
+        },
+        {
+            "name": "yajra/laravel-datatables-html",
+            "version": "v4.30.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yajra/laravel-datatables-html.git",
+                "reference": "ceb5eea82fed6c874478d69e35175964a72384fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables-html/zipball/ceb5eea82fed6c874478d69e35175964a72384fe",
+                "reference": "ceb5eea82fed6c874478d69e35175964a72384fe",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "laravelcollective/html": "^5.4|^6|^7",
+                "php": ">=7.0",
+                "yajra/laravel-datatables-oracle": "8.*|9.*"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Yajra\\DataTables\\HtmlServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yajra\\DataTables\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arjay Angeles",
+                    "email": "aqangeles@gmail.com"
+                }
+            ],
+            "description": "Laravel DataTables HTML builder plugin for Laravel 5.4+.",
+            "keywords": [
+                "JS",
+                "datatables",
+                "html",
+                "jquery",
+                "laravel"
+            ],
+            "time": "2020-06-18T10:30:27+00:00"
         },
         {
             "name": "yajra/laravel-datatables-oracle",
@@ -4658,6 +4960,55 @@
                 "page"
             ],
             "time": "2020-07-27T15:17:39+00:00"
+        },
+        {
+            "name": "facade/ignition-contracts",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/facade/ignition-contracts.git",
+                "reference": "aeab1ce8b68b188a43e81758e750151ad7da796b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/facade/ignition-contracts/zipball/aeab1ce8b68b188a43e81758e750151ad7da796b",
+                "reference": "aeab1ce8b68b188a43e81758e750151ad7da796b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.14",
+                "phpunit/phpunit": "^7.5|^8.0",
+                "vimeo/psalm": "^3.12"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Facade\\IgnitionContracts\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://flareapp.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Solution contracts for Ignition",
+            "homepage": "https://github.com/facade/ignition-contracts",
+            "keywords": [
+                "contracts",
+                "flare",
+                "ignition"
+            ],
+            "time": "2020-07-14T10:10:28+00:00"
         },
         {
             "name": "filp/whoops",

@@ -135,9 +135,6 @@ return [
     */
 
     'providers' => [
-        Watson\Active\ActiveServiceProvider::class,
-        Yajra\DataTables\DataTablesServiceProvider::class,
-        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
         /*
          * Laravel Framework Service Providers...
          */
