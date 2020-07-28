@@ -27,7 +27,7 @@ abstract class BaseService
         1.59,
     ];
 
-    public static function getIr($matrixSize):  ? float
+    public function getIr($matrixSize):  ? float
     {
         return isset(self::$ir[$matrixSize - 1]) ? self::$ir[$matrixSize - 1] : null;
     }
