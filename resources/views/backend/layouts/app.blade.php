@@ -12,27 +12,7 @@
             @include('backend.partials.header')
             @include('backend.partials.sidebar')
             <div class="main-content">
-                <section class="section">
-                    <div class="section-header">
-                        <h1>Dashboard</h1>
-                        <div class="section-header-breadcrumb">
-                            <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                            <div class="breadcrumb-item"><a href="#">Modules</a></div>
-                            <div class="breadcrumb-item">DataTables</div>
-                        </div>
-                    </div>                  
-                    @php
-                        $tableHeader=['no'=>'No','name'=>'Nama'];
-                        $tableBody=[
-                            ['no'=>1,'name'=>'Nama1'],
-                            ['no'=>2,'name'=>'Nama2'],
-                            ['no'=>3,'name'=>'Nama3']
-                        ];
-                    @endphp
-                    <div class="section-body">
-                        <x-table.full-width card-header="hehe" :table-header="$tableHeader" :table-body="$tableBody"></x-table-full-width>
-                    </div>
-                </section>
+                @yield("app")
             </div>
             @include('backend.partials.footer')
         </div>
